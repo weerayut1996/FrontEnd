@@ -1,4 +1,12 @@
-<div class="home screen " data-id="2:354" onclick="window.open('javascript:history.back()', '_self');">
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#"><i class="fas fa-comment-medical fa-lg mr-2"></i>About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div> 
+
+<div class="home screen " data-id="2:354">
   <div class="home-xl4bh6" data-id="o0OTMvJMrSEhqoD7">
     <div class="rectangle-1-DDEW5g" data-id="2:355"></div><img class="path-1-DDEW5g" data-id="2:357"
       src="https://cdn.animaapp.com/projects/641b03fd25c3038155616ccc/releases/641b1a6adf1c709585e973c2/img/path-1@2x.png"
@@ -14,12 +22,12 @@
       alt="icon-home"><img class="icons8-rich-text-converter-48-DDEW5g" data-id="2:364"
       src="https://cdn.animaapp.com/projects/641b03fd25c3038155616ccc/releases/641b1a6adf1c709585e973c2/img/icons8-rich-text-converter-48.png"
       alt="icons8-rich-text-converter-48"><a
-      onclick="ShowOverlay('user-1', 'animate-appear');window.event.stopPropagation()"><img
+      ><img
         class="icons8-laptop-alert-100-DDEW5g" data-id="2:365"
         src="https://cdn.animaapp.com/projects/641b03fd25c3038155616ccc/releases/641b1a6adf1c709585e973c2/img/icons8-laptop-alert-100.png"
         alt="icons8-laptop-alert-100"></a><img class="icons8-account-100-DDEW5g" data-id="2:366"
       src="https://cdn.animaapp.com/projects/641b03fd25c3038155616ccc/releases/641b1a6adf1c709585e973c2/img/icons8-account-100.png"
-      alt="icons8-account-100"><img class="menu-100_2-DDEW5g" data-id="2:367"
+      alt="icons8-account-100"><img (click)="openNav()" class="menu-100_2-DDEW5g" data-id="2:367"
       src="https://cdn.animaapp.com/projects/641b03fd25c3038155616ccc/releases/641b1a6adf1c709585e973c2/img/menu-100-2.png"
       alt="menu-100_2">
   </div>
