@@ -1,0 +1,477 @@
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* screen - login */
+
+.login {
+  background-color: var(--rgb255-255-255);
+  border: 1px none;
+  height: 812px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+
+.login .bg-b8DrbD {
+  background-color: transparent;
+  height: 812px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 375px;
+}
+
+.login .path-1-b8DrbD {
+  background-color: transparent;
+  height: 1px;
+  left: 109px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 809px;
+  width: 1px;
+}
+
+.login .login-b8DrbD {
+  background-color: transparent;
+  height: 149px;
+  left: 94px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 70px;
+  width: 149px;
+}
+
+.login .title-b8DrbD {
+  background-color: transparent;
+  color: #f5f5f5;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 41px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 15px;
+  width: auto;
+}
+
+.login .rectangle-6-b8DrbD {
+  background-color: var(--rgb255-255-255);
+  border-radius: 16px;
+  height: 56px;
+  left: 42px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 263px;
+  width: 288px;
+}
+
+.login .rectangle-8-b8DrbD {
+  background-color: var(--rgb255-255-255);
+  border-radius: 16px;
+  height: 56px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 340px;
+  width: 288px;
+}
+
+.login .rectangle-4-b8DrbD {
+  background-color: var(--buttercup);
+  border-radius: 13px;
+  height: 56px;
+  left: 42px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 263px;
+  width: 61px;
+}
+
+.login .rectangle-7-b8DrbD {
+  background-color: var(--buttercup);
+  border-radius: 13px;
+  height: 56px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 340px;
+  width: 61px;
+}
+
+.login .rectangle-5-b8DrbD {
+  background-color: var(--rgb255-255-255);
+  height: 17px;
+  left: 43px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 423px;
+  width: 18px;
+}
+
+.login .icons8-user-60-b8DrbD {
+  background-color: transparent;
+  height: 40px;
+  left: 52px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 271px;
+  width: 40px;
+}
+
+.login .icons8-password-1-100-1-b8DrbD {
+  background-color: transparent;
+  height: 40px;
+  left: 52px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 348px;
+  width: 40px;
+}
+
+.login .remember-me-b8DrbD {
+  background-color: transparent;
+  color: #f5f5f5;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 73px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 413px;
+  width: auto;
+}
+
+.login .repeat-grid-2-b8DrbD {
+  background-color: transparent;
+  height: 53px;
+  left: 104px;
+  position: absolute;
+  top: 482px;
+  width: 168px;
+}
+
+.login .group-sd5tb7 {
+  width: 170px;
+}
+
+.login .repeat-grid-1-P0WPxf {
+  background-color: transparent;
+  height: 53px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 168px;
+}
+
+.login .group-GE85q7 {
+  width: 168px;
+}
+
+.login .rectangle-9-7XaCzO {
+  background-color: var(--buttercup);
+  border-radius: 19px;
+  height: 53px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 180px;
+}
+
+.login .text_label-P0WPxf {
+  background-color: transparent;
+  color: #040404;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 37px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 9px;
+  width: 105px;
+}
+
+.login .dont-have-an-account-b8DrbD {
+  background-color: transparent;
+  color: transparent;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 51px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 632px;
+  width: auto;
+}
+
+.login .span0-BpxMG7 {
+  color: #fcf5f5;
+  font-style: normal;
+}
+
+.login .span1-BpxMG7 {
+  color: #0ec8ef;
+  font-style: normal;
+}
+
+.login .span2-BpxMG7 {
+  color: #fcf5f5;
+  font-style: normal;
+}
+
+.login .rtarfmith-b8DrbD {
+  background-color: transparent;
+  color: #090808a1;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 128px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 274px;
+  width: auto;
+}
+
+.login .x-b8DrbD {
+  -webkit-text-stroke: 1px #214f61;
+  background-color: transparent;
+  color: #6a6a63;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 143px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 347px;
+  width: auto;
+}
+
+.login .group {
+  background-color: transparent;
+  height: 53px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+}
